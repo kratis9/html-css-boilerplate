@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+       
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        
+</head>
+<body>
+
+<div class="container-fluid">
+   
+<div class="jumbotron">
+    
+    <div class="col-xs-3">
+        
+        <button  id="btn1" type="button" class="btn btn-default" >Button 1</button>
+        
+    </div>
+    
+     <div class="col-xs-3">
+        
+        <button id="btn2" type="button" class="btn btn-default">Button 2</button>
+        
+    </div>
+    
+     <div class="col-xs-3">
+        
+        <button id="btn3" type="button" class="btn btn-default">Button 3</button>
+        
+    </div>
+    
+     <div class="col-xs-3">
+        
+        <button id="btn4" type="button" class="btn btn-default">Button 4</button>
+        
+    </div>
+    </div>
+    
+    
+    
+   <div class="row">
+    
+
+    <div class="col-xs-3">
+    <div id="panel1" class="panel panel-primary">
+        <div class="panel-heading">
+            #panel1
+            
+        </div>
+        <div class="panel-body">Content</div>
+        </div>
+        </div>
+        
+        <div class="col-xs-3">
+    <div id="panel2" class="panel panel-primary">
+        <div class="panel-heading">
+            #panel2
+            
+        </div>
+        <div class="panel-body">Content</div>
+        </div>
+        </div>
+        
+        
+        <div class="col-xs-3">
+    <div id="panel3" class="panel panel-primary">
+        <div class="panel-heading">
+            #panel3
+            
+        </div>
+        
+        <div class="panel-body">Content</div>
+        </div>
+        </div>
+        
+        <div class="col-xs-3">
+    <div id="panel4" class="panel panel-primary">
+        <div class="panel-heading">
+            #panel4
+            
+        </div>
+        <div class="panel-body">Content</div>
+        </div>
+        </div>
+    
+</div>
+  
+  </div> 
+   
+    
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+    
+    $(function(){
+        
+        //$("#panel1").hide(300).show(1000).hide(300).show(1000);
+        $('#btn1').on('click', function(){
+            $('#panel1').toggle();
+        });
+        $('#btn2').on('click', function(){
+            $('#panel2').fadeToggle(200);
+        });
+        $('#btn3').on('click', function(){
+            $('#panel3').fadeToggle(200);
+        });
+        $('#btn4').on('click', function(){
+            $('#panel4').fadeToggle(200);
+        });
+        
+    });
+        
+    
+            
+
+        
+       
+        
+      
+                      
+                      
+    
+    
+    </script>
+
+</html>
